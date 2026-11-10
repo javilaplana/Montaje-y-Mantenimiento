@@ -1,0 +1,726 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Firmware del Sistema - BIOS y UEFI">
+      
+      
+        <meta name="author" content="Eduard San Anselmo Mateu">
+      
+      
+      
+        <link rel="prev" href="../03_hardware_memorias_reseteo/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>4. Resumen y Comparativa - Montaje y Mantenimiento de Equipos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4-resumen-de-caracteristicas-y-comparativa" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Montaje y Mantenimiento de Equipos" class="md-header__button md-logo" aria-label="Montaje y Mantenimiento de Equipos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Montaje y Mantenimiento de Equipos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. Resumen y Comparativa
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Montaje y Mantenimiento de Equipos" class="md-nav__button md-logo" aria-label="Montaje y Mantenimiento de Equipos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Montaje y Mantenimiento de Equipos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Firmware: BIOS y UEFI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Firmware: BIOS y UEFI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_diferencias_bios_uefi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. BIOS vs. UEFI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_proceso_arranque_post/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Arranque POST y Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_hardware_memorias_reseteo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Hardware, Memorias y Reseteo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Resumen y Comparativa
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Resumen y Comparativa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-tabla-comparativa-bios-tradicional-vs-uefi-moderna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Tabla Comparativa: BIOS Tradicional vs. UEFI Moderna
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-conclusiones-tecnicas-para-el-taller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Conclusiones Técnicas para el Taller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-glosario-de-terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Glosario de Términos Clave
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-tabla-comparativa-bios-tradicional-vs-uefi-moderna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Tabla Comparativa: BIOS Tradicional vs. UEFI Moderna
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-conclusiones-tecnicas-para-el-taller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Conclusiones Técnicas para el Taller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-glosario-de-terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Glosario de Términos Clave
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="4-resumen-de-caracteristicas-y-comparativa">4. Resumen de Características y Comparativa</h1>
+<h2 id="41-tabla-comparativa-bios-tradicional-vs-uefi-moderna">4.1. Tabla Comparativa: BIOS Tradicional vs. UEFI Moderna</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Característica</th>
+<th style="text-align: left;">BIOS Clásica (<em>Legacy</em>)</th>
+<th style="text-align: left;">UEFI Moderna</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Época de introducción</strong></td>
+<td style="text-align: left;">Década de 1980</td>
+<td style="text-align: left;">2005 en adelante</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Arquitectura de proceso</strong></td>
+<td style="text-align: left;">16 bits (Modo real)</td>
+<td style="text-align: left;">32 bits o 64 bits (Modo nativo)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Espacio de memoria asignado</strong></td>
+<td style="text-align: left;">1 MB máximo</td>
+<td style="text-align: left;">Sin limitación práctica de memoria</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tabla de particiones asociada</strong></td>
+<td style="text-align: left;">MBR (<em>Master Boot Record</em>)</td>
+<td style="text-align: left;">GPT (<em>GUID Partition Table</em>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tamaño máximo de disco admitido</strong></td>
+<td style="text-align: left;"><strong>2,2 TB</strong> ($2^{32} \times 512\text{ bytes}$)</td>
+<td style="text-align: left;"><strong>9,4 ZB</strong> (Zetabytes)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Particiones primarias máximas</strong></td>
+<td style="text-align: left;">Hasta 4 (o 3 primarias + 1 extendida)</td>
+<td style="text-align: left;">Hasta 128 particiones primarias en Windows</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interfaz de configuración</strong></td>
+<td style="text-align: left;">Texto monocromo/azul, solo teclado</td>
+<td style="text-align: left;">Gráfica de alta resolución (<em>GUI</em>), ratón y teclado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Seguridad de arranque</strong></td>
+<td style="text-align: left;">Inexistente (vulnerable a <em>bootkits</em>)</td>
+<td style="text-align: left;"><strong>Secure Boot</strong> mediante firmas criptográficas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Carga de controladores</strong></td>
+<td style="text-align: left;">Lenta, secuencial dispositivo a dispositivo</td>
+<td style="text-align: left;">Rápida, inicialización de componentes en paralelo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Soporte de red</strong></td>
+<td style="text-align: left;">No soportado en el arranque básico</td>
+<td style="text-align: left;">Pila de red TCP/IP completa integrada</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ubicación del cargador de arranque</strong></td>
+<td style="text-align: left;">Sector físico 0 del disco (código MBR)</td>
+<td style="text-align: left;">Partición estándar FAT32 de sistema (<strong>ESP</strong>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mantenimiento de configuración</strong></td>
+<td style="text-align: left;">Memoria volátil CMOS alimentada por pila</td>
+<td style="text-align: left;">Memoria volátil CMOS / NVRAM / Partición ESP</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="42-conclusiones-tecnicas-para-el-taller">4.2. Conclusiones Técnicas para el Taller</h2>
+<ul>
+<li><strong>La BIOS clásica</strong> es un sistema obsoleto que ya no se implementa en placas base actuales debido a su incapacidad para arrancar desde discos de alta capacidad (mayores de 2,2 TB) y a su lentitud al trabajar en modo de 16 bits.</li>
+<li><strong>La UEFI</strong> representa el estándar actual y de futuro: ofrece mayor velocidad de encendido, interfaces visuales intuitivas con monitorización de voltajes y ventiladores, y mecanismos de seguridad activos como <strong>Secure Boot</strong>.</li>
+<li><strong>El módulo CSM:</strong> Cuando debamos reparar un equipo o recuperar datos de discos duros antiguos configurados con particiones MBR, deberemos activar el modo de compatibilidad CSM dentro de la UEFI para permitir su arranque.</li>
+</ul>
+<hr />
+<h2 id="43-glosario-de-terminos-clave">4.3. Glosario de Términos Clave</h2>
+<ul>
+<li><strong>Bootloader (Gestor de arranque):</strong> Código ejecutable que carga en memoria RAM el núcleo (<em>kernel</em>) del sistema operativo.</li>
+<li><strong>Clear CMOS:</strong> Procedimiento físico (por jumper, pila o botón) para borrar la memoria volátil y restablecer las opciones por defecto del fabricante.</li>
+<li><strong>CSM (<em>Compatibility Support Module</em>):</strong> Componente de la UEFI que emula a una BIOS tradicional para arrancar sistemas antiguos o discos MBR.</li>
+<li><strong>EEPROM / Flash ROM:</strong> Chip no volátil donde se encuentra grabado el programa base del firmware.</li>
+<li><strong>ESP (<em>EFI System Partition</em>):</strong> Partición formateada en FAT32 donde residen los cargadores de arranque con extensión <code>.efi</code>.</li>
+<li><strong>EZ Debug LEDs:</strong> Hileras de diodos emisores de luz en la placa base (<code>CPU</code>, <code>DRAM</code>, <code>VGA</code>, <code>BOOT</code>) que delatan qué componente impide completar el POST.</li>
+<li><strong>Flasheo:</strong> Acción técnica de reprogramar la memoria EEPROM para actualizar la versión del firmware de la placa base.</li>
+<li><strong>GPT (<em>GUID Partition Table</em>):</strong> Estándar moderno de tablas de particiones que sustituye al MBR y permite discos de más de 2,2 TB.</li>
+<li><strong>MBR (<em>Master Boot Record</em>):</strong> Primer sector de un disco duro bajo el esquema clásico, limitado a particiones de 2,2 TB.</li>
+<li><strong>POST (<em>Power-On Self Test</em>):</strong> Rutina automática de comprobación de hardware que se ejecuta inmediatamente tras pulsar el botón de encendido.</li>
+<li><strong>Secure Boot:</strong> Tecnología de validación criptográfica que bloquea el arranque si el cargador de inicio no dispone de una firma digital de confianza.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
